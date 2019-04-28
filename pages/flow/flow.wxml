@@ -1,0 +1,20 @@
+<!--pages/flow/flow.wxml-->
+<view class="container">
+  <view class="flowBox" wx:if="{{flowType == 'flow1'}}">
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/lc1.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/lc2.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/lc3.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/lc4.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/lc5.jpg"></image>
+  </view>
+   <view class="flowBox" wx:else>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_1.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_2.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_3.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_4.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_5.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_6.jpg"></image>
+    <image class="flowPic db" mode="widthFix" src="https://api.mfk.com/statics/images/lyimgs/selfask_7.jpg"></image>
+  </view>
+
+</view>

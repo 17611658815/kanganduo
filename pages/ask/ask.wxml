@@ -1,0 +1,45 @@
+<!--pages/ask/ask.wxml-->
+<view class="container">
+    <view class="cBody">
+      <text class="title db">设置门诊常见问题</text>
+      <view class='textareaBox'>
+        <textarea class="input db" auto-height="true" value="{{oldName}}" bindinput="askName" placeholder="请输入您在门诊时患者常问的问题~" placeholder-class="phcolor"></textarea>
+      </view>
+      <block wx:for="{{searchResultDatas}}" wx:key="key">
+        <view class="search-result-item">
+          <searchHighlightTextView class="result-item" datas='{{searchData[index]}}' bindtap="chooseSearchResultAction" data-val='{{item.title}}' />
+        </view>
+      </block>
+      <button class="changeBtn db" bindtap="saveName">提交</button>
+    </view>
+  </view>
+<!-- 模态窗口 -->
+<!-- <view class="modal" style="display:{{ishide}}"> -->
+<!-- <view class="modal">
+  <view class="dialog">
+    <image class="close db" src="../../images/close.png" bindtap="close"></image>
+    <view class="diaPicBox">
+      <image class="diaPic db" src="../../images/succeed.png"></image>
+    </view>
+    <view class="prompt">
+      <text class="proTitle db">提交成功</text>
+    </view>
+    <view class="button">
+      <text class="setNew db fl" bindtap="gotoSetNew">设置新问题</text>
+      <text class="answerNow db fr" bindtap="gotoRecord">立即回答</text>
+    </view>
+  </view>
+</view>   -->
+
+<view class='tost' style="display:{{ishide}}">
+  <view class='tost_box'>
+    <view class='top'>
+      <image src='../../images/succeed.png'></image>
+      <view>提交成功</view>
+    </view>
+    <view class='btom'>
+     <text style='border-right:1rpx solid #d1d1d1;color:#666666' bindtap="gotoSetNew">设置新问题</text>
+      <text style='color:#333333' bindtap="gotoRecord">立即回答</text>
+    </view>
+  </view>
+</view>

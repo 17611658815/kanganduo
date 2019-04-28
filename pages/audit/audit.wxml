@@ -1,0 +1,5 @@
+<view class="noClassBox">
+  <image class="noting db" src="../../images/shenhe.png"></image>
+  <text class="prompt db">工作人员正在努力审核,请耐心等待哦~</text>
+  <button class='goindex' bindtap='goindex'>返回首页</button>
+</view>

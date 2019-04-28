@@ -1,0 +1,8 @@
+<!--pages/rename/rename.wxml-->
+<view class="container">
+  <view class="cBody">
+    <text class="title db">请输入新的录音名称</text>
+    <input class="input db" value="{{oldName}}" bindinput="newName" placeholder="请输入新的录音名称" placeholder-class="phcolor"></input>
+    <button class="changeBtn db" bindtap="saveNew">更 新</button>
+  </view>
+</view>

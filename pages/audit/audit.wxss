@@ -1,0 +1,26 @@
+.noClassBox{
+  width: 100%;
+  padding: 190rpx 0 0;
+}
+.noting{
+  width: 240rpx;
+  height: 189rpx;
+  margin: 0 auto;
+}
+.prompt{
+  font-size: 32rpx;
+  color: #666666;
+  margin-top: 10rpx;
+  text-align: center;
+} 
+.goindex{
+  width: 382rpx;
+  margin-top: 100rpx;
+  background: linear-gradient(#6EAFF7, #6E9FF7);
+  color: white;
+  border-radius:44rpx 44rpx 44rpx 44rpx;
+  border: none;
+}
+button::after{
+  border: none
+}

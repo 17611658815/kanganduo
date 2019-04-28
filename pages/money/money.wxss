@@ -1,0 +1,144 @@
+.section{
+  width: 100%;
+  height: 300rpx;
+  background: #6EA8F7;
+  display: flex;
+  align-items: center;
+}
+.section view:nth-child(1){
+  width: 30%;
+  height: 150rpx;
+  text-align: center;
+  color: white;
+  margin-top: 50rpx;
+}
+.section view:nth-child(1) text:nth-child(1){
+  font-size: 32rpx;
+}
+.section view:nth-child(2) text:nth-child(1){
+  font-size: 65rpx;
+}
+.section view:nth-child(2) text:nth-child(2){
+  font-size: 32rpx;
+}
+.section view:nth-child(2){
+  width: 70%;
+  height: 150rpx;
+  text-align: center;
+   color: white;
+}
+.noClassBox{
+  width: 100%;
+  padding: 190rpx 0 0;
+}
+.noting{
+  width: 300rpx;
+  height: 260rpx;
+  margin: 0 auto;
+}
+.prompt{
+  font-size: 28rpx;
+  color: #666666;
+  margin-top: 50rpx;
+  text-align: center;
+} 
+.commit{
+  width: 382rpx;
+  margin-top: 100rpx;
+  background: linear-gradient(#6EAFF7, #6E9FF7);
+  color: white;
+  border-radius:44rpx 44rpx 44rpx 44rpx;
+  border: none;
+}
+.null{
+  width: 1rpx;
+  background:#C3DCFB;
+  height: 100rpx;
+  position: absolute;
+  left: 32%;
+  top: 8%;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid white;
+  position: absolute;
+  left: 21%;
+  top: 12.5%;
+}
+.msgList{
+  width: 90%;
+  height: 110rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin: auto;
+}
+.tagPic{
+  width: 42rpx;
+  height: 42rpx;
+  margin-top: 32rpx;
+  margin-left: 10rpx;
+}
+.msgTitle{
+  font-size: 30rpx;
+  color: #333333;
+  margin-left: 30rpx;
+  line-height: 110rpx;
+}
+.arrowRight{
+  width: 18rpx;
+  height: 30rpx;
+  margin-top: 40rpx;
+}
+.recordsList{
+  width: 100%;
+}
+.recordsList .recordsListBox{
+  width: 90%;
+  height: 150rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin: auto;
+  line-height: 1;
+  padding-bottom: 80rpx;
+}
+.time{
+  font-size: 25rpx;
+  color: gray;
+  margin-top: 23rpx
+}
+.recordsListBox view:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33rpx;
+  font-size: 32rpx;
+}
+.recordsListBox view:nth-child(2){
+  padding-top: 23rpx;
+  color: #333333;
+}
+.recordsListBox view:nth-child(2) text:nth-child(2){
+  margin-left: 20rpx
+}
+.recordsListBox view:nth-child(1) text:nth-child(2){
+  width: 20%;
+  text-align: right;
+  color: #ff3548;
+}
+.recordsListBox view:nth-child(1) text:nth-child(1){
+  width: 120%;
+  text-overflow: ellipsis; 
+  white-space:nowrap;
+  overflow:hidden; 
+}
+
+.deposit{
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(#6EAFF7, #6E9FF7);
+}

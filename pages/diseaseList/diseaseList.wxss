@@ -1,0 +1,124 @@
+/* pages/diseaseList/diseaseList.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* 搜索栏 */
+
+.searchBox {
+  width: 92%;
+  height: 100rpx;
+  padding: 0 4%;
+  position: relative;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.searchIcon {
+  width: 32rpx;
+  height: 34rpx;
+  left: 50rpx;
+  top: 32rpx;
+  z-index: 9;
+  position: absolute;
+}
+
+.searchInput {
+  width: 532rpx;
+  height: 60rpx;
+  background: #f7f7f7;
+  margin-top: 20rpx;
+  line-height: 60rpx;
+  padding-left: 68rpx;
+  font-size: 30rpx;
+  color: #333;
+  border-radius: 30rpx;
+}
+
+.phcolor {
+  color: #999;
+}
+
+.operationBtn {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  color: #333;
+  line-height: 60rpx;
+}
+
+/* 疾病列表 */
+
+.diseaseList {
+  width: 100%;
+}
+
+.diseaseBox {
+  width: 92%;
+  height: auto;
+  padding: 30rpx 0;
+  margin: 0 auto;
+  line-height: 50rpx;
+  text-align: justify;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.disease {
+  font-size: 30rpx;
+  color: #333;
+}
+
+::-webkit-scrollbar {
+  color: #c6c6c6;
+}
+
+/*缺省页*/
+
+.noClassBox {
+  width: 100%;
+  padding: 250rpx 0 0;
+}
+
+.noting {
+  width: 184rpx;
+  height: 167rpx;
+  margin: 0 auto;
+}
+
+.prompt {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+/* 加载更多 */
+
+.loadMore {
+  width: 100%;
+  padding: 20rpx 0;
+  height: 80rpx;
+  text-align: center;
+  background: #f7f7f7;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.loadBox {
+  width: 150rpx;
+  height: 40rpx;
+  padding: 20rpx 0;
+  margin: 0 auto;
+}
+
+.loadPic {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.loading {
+  font-size: 22rpx;
+  color: #999;
+  line-height: 40rpx;
+}

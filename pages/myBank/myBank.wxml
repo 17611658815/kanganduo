@@ -1,0 +1,38 @@
+<!--银行卡绑定页面  -->
+<view class='myBank'>
+  <!--输入页面  --> 
+  <view class="inputBox">
+  
+    <text class='title'>为了便于结算收益,需要填写相关信息哟~</text>
+    <view>
+      <text>姓名</text>
+      <input placeholder-class="phactive" placeholder='请输入姓名' bindinput="saveUserName" value='{{bankinfo.name}}'></input>
+    </view>
+    <view>
+      <text>银行卡号</text>
+      <input placeholder-class="phactive" placeholder='请输入银行卡号' bindinput="saveBankNum" value='{{bankinfo.code}}'></input>
+    </view>
+    <view class='bank'  bindtap='chooseBank'>
+      <text>银行</text>
+      <image wx:if="{{bankinfo.bank==''}}" src="../../images/arrowRight.png"></image>
+      <text wx:else class='bankmsg' >{{bankinfo.bank}}</text>
+    </view>
+    <view>
+      <text>身份证号</text>
+      <input placeholder-class="phactive" placeholder='请输入身份证号' bindinput="saveIdNum" value='{{bankinfo.identity}}'></input>
+    </view>
+    <view>
+      <text>银行预留手机号</text>
+      <input placeholder-class="phactive" placeholder='请输入手机号码' bindinput="saveUserTel" value='{{bankinfo.mobile}}'></input>
+    </view>
+  </view>
+ </view>  
+
+<view class='btnBox'>
+  <button class='commit' bindtap='submit' disabled='{{flge}}'>提交</button>
+</view>
+
+<!--tost弹框提示  -->
+<view class="msgBox" style="display:{{isHide}};">
+  <text class="errorMsg">{{errorMsg}}</text>
+</view>

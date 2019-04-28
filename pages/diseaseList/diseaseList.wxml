@@ -1,0 +1,26 @@
+<!--pages/diseaseList/diseaseList.wxml-->
+<view class="container">
+  <!-- 获取问题列表 -->
+  <scroll-view class="diseaseList" style="height: {{windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoad">
+    <view wx:if="{{listNum > 0}}">
+      <block wx:for="{{diseaseList}}"> 
+        <view class="diseaseBox" bindtap="gotoRecord" data-id="{{item.id}}" data-title="{{item.title}}">
+          <text class="disease">{{index+1}}.{{item.title}}</text>
+        </view>
+      </block> 
+    </view>
+    <view class="noClass" wx:else>
+      <view class="noClassBox">
+        <image class="noting db" src="../../images/nothing.png"></image>
+        <text class="prompt db">数据正在更新中，请耐心等待~</text>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 加载更多 -->
+  <view class="loadMore" wx:if="{{loading}}">
+    <view class="loadBox clearfix">
+      <image class="loadPic db fl" src="../../images/timg.gif"></image>
+      <text class="loading db fr">加载中...</text>
+    </view>
+  </view>
+</view>

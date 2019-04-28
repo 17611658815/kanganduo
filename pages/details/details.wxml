@@ -1,0 +1,6 @@
+<view class="noClassBox">
+  <image class="noting db" src="../../images/shibai.png"></image>
+  <text class='shibai db'>语音审核失败</text>
+  <text class="prompt db">{{errmsg}}</text>
+  <button class='goindex' data-title='{{title}}' data-questionId='{{question}}' bindtap='goRecord'>重新录制</button>
+</view>

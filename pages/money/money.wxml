@@ -1,0 +1,41 @@
+<view class='money' wx:if="{{monayList.length==0}}">
+  <view class='moneyMsg'>
+    <!--时间选择器  -->
+    <view class="section">
+      <view>
+       <picker mode="date" value="{{time}}" start="2010-09-01" end="2020-09-01" fields="month" bindchange="bindDateChange">
+          <text class='db'>{{time[0]}}年</text>
+          <text class='db'>{{time[1]}}月</text>
+          <text class='triangle-down'></text>
+        </picker>
+      </view>
+      <view>
+        <text class='db'>￥{{monay}}</text>
+        <text class='db'>累计回答问题：{{count}}个</text>
+      </view>
+      <view class='null'></view>
+    </view>
+    <view class="msgBox">
+      <view url="../money/money" class="msgList clearfix">
+        <image class="tagPic db fl" src="../../images/shouyi.png"></image>
+        <text class="msgTitle db fl">收益明细</text>
+      </view>
+    </view>
+    <!--渲染收益明细  -->
+    <view class="recordsList">
+     <view class="recordsListBox" wx:for="{{monayList}}">
+      <view> <text>{{item.comment}}</text> <text>{{item.money}}</text> </view>
+     <view><text class='time'>{{item.created}}</text></view> 
+     </view>
+    </view>
+  </view>
+<button bindtap='deposit' wx:if='{{monayList.length >0}}' class='deposit'>提现</button>
+</view>
+<!--无收益显示模块  -->
+ <view class="noClass" wx:else>
+    <view class="noClassBox">
+      <image class="noting db" src="../../images/myshouyi.png"></image>
+      <text class="prompt db">您还没有收益哦，快去赚钱吧！</text>
+      <button class='commit' bindtap='goindex'>去赚钱</button>
+    </view>
+ </view> 
